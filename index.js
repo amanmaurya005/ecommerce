@@ -10,14 +10,19 @@ async function fetchdatafromurl(url){
 }
 
 fetchdatafromurl("https://fakestoreapi.in/api/products");
+
 function showdata(arr){
     arr.map((product)=>{
         const parent = document.createElement("div");
         parent.classList.add("product");
 
+        const anchor=document.createElement("a");
+        anchor.href="singleProduct.html?id="+ product.id;
+
         const img = document.createElement("img");
         img.src = product.image;
 
+        anchor.append(img);
 
         const title = document.createElement("h3");
         title.textContent = product.title;
@@ -36,7 +41,7 @@ function showdata(arr){
 
         btnGroup.append(wishlistBtn);
         btnGroup.append(cartBtn);
-        parent.append(img);
+        parent.append(anchor);
         parent.append( title);
         parent.append(price);
         parent.append( btnGroup);

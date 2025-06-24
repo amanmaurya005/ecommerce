@@ -1,0 +1,53 @@
+*{
+    padding: 09;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: rgb(215, 107, 12);
+    padding: 0 30px;
+    color: white;
+}
+header ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 700;
+    width: 30%;
+}
+header li{
+    list-style: none;
+}
+header ul a{
+text-decoration: none;
+color:white;
+}
+section {
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+}
+
+.single-product img {
+    width: 300px;
+    border-radius: 8px;
+}
+
+.single-product h2 {
+    margin: 10px 0;
+}
+
+.single-product p {
+    margin: 10px 0;
+}
+
+.single-product h3 {
+    color: green;
+    font-weight: bold;
+}
+
